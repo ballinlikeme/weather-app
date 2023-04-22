@@ -1,0 +1,14 @@
+.header {
+     height: 80px;
+     padding: 0px 40px;
+
+     display: grid;
+     justify-content: center;
+     align-items: center;
+
+     grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+.header>div:last-child {
+     grid-column-start: 3;
+}

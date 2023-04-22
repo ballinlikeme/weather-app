@@ -1,0 +1,50 @@
+.radio {
+     align-self: center;
+     justify-self: end;
+     margin-right: 50px;
+}
+
+.body {
+     display: flex;
+     gap: 10px;
+
+     cursor: pointer;
+}
+
+.value {
+     font-weight: 600;
+}
+
+.circle {
+     flex: 0 0 50px;
+
+     background-color: rgb(135, 135, 194);
+     border-radius: 10px;
+     padding: 5px;
+
+     position: relative;
+}
+
+.circle::after {
+     content: '';
+
+     position: absolute;
+     top: 50%;
+     left: 5px;
+
+     transform: translateY(-50%);
+
+     width: 13px;
+     height: 13px;
+
+     background-color: rgb(255, 255, 255);
+     border-radius: 50%;
+
+     transition-property: left, right;
+     transition-timing-function: ease-in;
+     transition-duration: 300ms;
+}
+
+.active::after {
+     left: calc(100% - 18px);
+}

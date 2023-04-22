@@ -1,0 +1,23 @@
+.majorList {
+     display: flex;
+     justify-content: space-between;
+     padding: 40px 0 0;
+     min-width: 200px;
+     max-width: 250px;
+}
+
+.majorItem {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.minorList {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.minorItem {
+     font-size: 18px;
+}

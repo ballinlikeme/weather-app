@@ -1,0 +1,32 @@
+.main {
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 120px 0 0;
+}
+
+.container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.list {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+}
+
+.location span {
+     font-size: 30px;
+     font-weight: 600;
+}
+
+.icon img {
+     max-width: 100%;
+}
+
+.temp {
+     font-size: 50px;
+}
