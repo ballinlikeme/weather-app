@@ -5,13 +5,13 @@ import { ICustomError } from "../models/ICustomError"
 export const weatherApi = createApi({
      reducerPath: "weatherApi",
      tagTypes: ['weather'],
-     baseQuery: fetchBaseQuery({ baseUrl: "http://api.weatherapi.com/v1/current.json" }),
+     baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_CURRENT_WEATHER_URL }),
      endpoints: builder => ({
           getWeatherByLocation: builder.query<IWeather, string>({
                query: (location) => {
                     return {
                          url: '',
-                         params: { key: "e5ab2fae382d43498f7180356231204", q: location }
+                         params: { key: import.meta.env.VITE_KEY, q: location }
                     }
                },
                providesTags: ['weather'],

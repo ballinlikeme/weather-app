@@ -12,9 +12,6 @@ export const RadioButton: React.FC = () => {
           dispatch(changeSystem())
      }
 
-     // false = emperical
-     // true = metric    
-
      return (
           <div className={styles.radio} onClick={() => handleClick()}>
                <div className={styles.body}>
